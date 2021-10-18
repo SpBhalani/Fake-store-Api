@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios'
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { actionData } from './redux/action/action';
+import { Body } from './Body';
+import { Header } from './Header';
+import { ProductInfo } from './ProductInfo';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const getProducts = async () => {
+      const product = await axios
+        .get('https://fakestoreapi.com/products')
+        .catch(err => console.log(err));
+      dispatch(actionData(product.data));
+    }
+    getProducts();
+  }, [dispatch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path='/'>
+            <Body />
+          </Route>
+          <Route path='/product/:productId' >
+            <ProductInfo />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
