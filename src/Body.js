@@ -22,7 +22,7 @@ export const Body = (props) => {
                         <>
                             <div className="product" key={product.id}>
                                 <h4>{product.title}</h4>
-                                <Link to={`/product/${product.id}`} >
+                                <Link to={`/Fake-store-Api/product/${product.id}`} >
                                     <img src={product.image} alt={product.title} />
                                 </Link>
                                 <p>$ {product.price}</p>

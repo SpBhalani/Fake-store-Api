@@ -27,10 +27,10 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path='/'>
+          <Route path='/Fake-store-Api' exact>
             <Body />
           </Route>
-          <Route path='/product/:productId' >
+          <Route path='/Fake-store-Api/product/:productId' >
             <ProductInfo />
           </Route>
         </Switch>
