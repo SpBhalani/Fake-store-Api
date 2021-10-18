@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Fake-store-Api/static/css/main.a05730dd.chunk.css",
+    "main.js": "/Fake-store-Api/static/js/main.6566f151.chunk.js",
+    "main.js.map": "/Fake-store-Api/static/js/main.6566f151.chunk.js.map",
+    "runtime-main.js": "/Fake-store-Api/static/js/runtime-main.c6cbf87b.js",
+    "runtime-main.js.map": "/Fake-store-Api/static/js/runtime-main.c6cbf87b.js.map",
+    "static/js/2.c328a0db.chunk.js": "/Fake-store-Api/static/js/2.c328a0db.chunk.js",
+    "static/js/2.c328a0db.chunk.js.map": "/Fake-store-Api/static/js/2.c328a0db.chunk.js.map",
+    "index.html": "/Fake-store-Api/index.html",
+    "static/css/main.a05730dd.chunk.css.map": "/Fake-store-Api/static/css/main.a05730dd.chunk.css.map",
+    "static/js/2.c328a0db.chunk.js.LICENSE.txt": "/Fake-store-Api/static/js/2.c328a0db.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6cbf87b.js",
+    "static/js/2.c328a0db.chunk.js",
+    "static/css/main.a05730dd.chunk.css",
+    "static/js/main.6566f151.chunk.js"
+  ]
+}
